@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* =====================================通用========================================= */
+/* div {
+    outline: 1px solid black;
+} */
+#w100 {
+    width: 100%;
+}
+.row{
+    display: flex;
+    
+}
+.flex-row-reverse{
+    flex-direction: row-reverse;
+}
+.w60{
+    width: 60%;
+}
+.w30{
+    width: 30%;
+}
+.w10{
+    width: 10%;
+}
+.magincent{
+    margin: auto;
+}
+.ml20{
+    margin-left: 40px;
+}
+/* =====================================通用========================================= */
+
+/* =====================================主體========================================= */
+.container {
+    width: 1260px;
+    height: 5000px;
+    margin: 0px auto;
+}
+.relative{
+    position: relative;
+}
+/* =====================================主體========================================= */
+
+/* =====================================nav========================================= */
+#navWrapper{
+    width: 1180px;
+    height: 105px;   
+    width: 100%;
+}
+
+.search{
+    
+    width: 190px;
+    float: left; 
+   }
+   .search-bar{
+    width: 190px;
+    height: 27px;
+    font-size: 10px;
+    border: 1px solid #bfbfbf;   
+    margin-top: 32px;     
+    }
+    .search-btn{
+        color: #bfbfbf;
+        width: 36px;
+        height: 27px;
+        background-color:transparent;
+        color:#efe9e7;
+        outline:none;
+        border: none;
+        cursor: pointer; 
+        position: absolute;
+       right: 0px;
+       bottom: 0px;
+       }
+.navmenu a{
+    color: #a9a9a9;
+    text-decoration: none;
+    font-size: 18px;    
+}
+.navfunction {
+    text-align: right;    
+}
+.navfunction a{
+    color: #4D3126;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* =====================================nav========================================= */
