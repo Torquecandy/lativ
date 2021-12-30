@@ -13,7 +13,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	border: border-box;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -41,16 +41,20 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* =====================================通用========================================= */
-/* div {
-    outline: 1px solid black;
-} */
+
 #w100 {
     width: 100%;
 }
 .row{
     display: flex;
-    
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.wrap{
+    flex-wrap: wrap;
 }
 .flex-row-reverse{
     flex-direction: row-reverse;
@@ -70,17 +74,34 @@ table {
 .ml20{
     margin-left: 40px;
 }
+.relative{
+    position: relative;
+}
+
+.cnet{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-grow{
+    flex-grow: inherit;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.sbt{
+    justify-content: space-between;
+    
+}
 /* =====================================通用========================================= */
 
 /* =====================================主體========================================= */
 .container {
-    width: 1260px;
-    height: 5000px;
+    width: 1180px;
+    height: 6459px;
     margin: 0px auto;
+    padding:0 40px;
 }
-.relative{
-    position: relative;
-}
+
 /* =====================================主體========================================= */
 
 /* =====================================nav========================================= */
@@ -88,6 +109,7 @@ table {
     width: 1180px;
     height: 105px;   
     width: 100%;
+    
 }
 
 .search{
@@ -130,3 +152,91 @@ table {
 }
 
 /* =====================================nav========================================= */
+/* =====================================圖片輪播========================================= */
+.slider-dots {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.slider-dots li {
+    width: 10px;
+    height: 10px;    
+    margin: 5px;
+    border-radius: 20px;
+    background-color: white;
+}
+.left_btn {
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    height: 30px;
+    color: #bfbfbf;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color:transparent ;
+    line-height: 30px;
+    padding-left: 3px;    
+    cursor: pointer;
+}
+
+.right_btn {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 25px;
+    height: 30px;
+    color: #bfbfbf;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color:transparent ;
+    line-height: 30px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+/* =====================================圖片輪播========================================= */
+/* =====================================功能選單
+========================================= */
+.box{
+    flex-grow: 1;    
+}
+
+
+/* =====================================功能選單
+========================================= */
+/* =====================================圖片區
+========================================= */
+.align-items-stretch{
+    align-items: stretch;
+}
+.divimg div{
+    margin-bottom: 15px;
+}
+/* =====================================圖片區
+========================================= */
+/* =====================================Footer
+========================================= */
+.footer{
+    width: 1180px;
+    height: 46.3px;
+}
+.footbox{
+   
+    height: 101px;    
+}
+.footbox a{
+    text-align: right;
+    color: #4D3126;
+    text-decoration: none;
+    font-size: 13px;
+}
+.footbox ul{
+    margin-top: 30px;
+    
+}
+
+ 
+
+
